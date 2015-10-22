@@ -1,0 +1,20 @@
+<template name="posts">
+	<section id="posts" class="ui container">
+		
+		<h2 class="ui header">Posts</h2>
+
+		{{ #each posts }}
+		<article class="ui segment">
+			<h3 class="ui header">{{{ title }}}</h3>
+			<p>{{{ text }}}</p>
+			<a class="ui blue basic animated button mini" href="/posts/{{seo_url}}">
+			  <div class="visible content">read more&hellip;</div>
+			  <div class="hidden content">
+			    <i class="right long arrow icon"></i>
+			  </div>
+			</a>
+		</article>
+		{{ /each }}
+
+	</section>
+</template>

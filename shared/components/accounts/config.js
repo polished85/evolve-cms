@@ -3,7 +3,7 @@ AccountsTemplates.configure({
     showForgotPasswordLink: true,
     showResendVerificationEmailLink: true,
 
-    defaultLayout: 'layout',
+    defaultLayout: 'single_col',
     defaultLayoutRegions: {},
     defaultContentRegion: 'main'
 })
